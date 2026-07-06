@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="img">
+          <img
+            alt="Logo"
+            role="presentation"
+            class="img-1"
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='90' height='34' viewBox='0 0 80 30' preserveAspectRatio='xMidYMid meet'><defs><radialGradient id='_2002046508__a' cx='0' cy='0' r='1' gradientTransform='matrix(.21 -.67353 .2545 .07935 .512 1.109)'><stop stop-color='%236420FF'/><stop offset='1' stop-color='%236420FF' stop-opacity='0'/></radialGradient><radialGradient id='_2002046508__b' cx='0' cy='0' r='1' gradientTransform='matrix(.584 .16215 -.3771 1.3582 .024 .666)'><stop offset='.25' stop-color='%2300C4CC'/><stop offset='1' stop-color='%2300C4CC' stop-opacity='0'/></radialGradient><radialGradient id='_2002046508__c' cx='0' cy='0' r='1' gradientTransform='matrix(.29425 -.739 .3555 .14155 .427 1)'><stop stop-color='%236420FF'/><stop offset='1' stop-color='%236420FF' stop-opacity='0'/></radialGradient><radialGradient id='_2002046508__d' cx='0' cy='0' r='1' gradientTransform='matrix(.3915 -.59869 .4743 .31016 .028 1)'><stop stop-color='%236420FF'/><stop offset='1' stop-color='%236420FF' stop-opacity='0'/></radialGradient><radialGradient id='_2002046508__e' cx='0' cy='0' r='1' gradientTransform='rotate(34.593 -.1 .2) scale(1.03255 2.80688)'><stop stop-color='%2300C4CC'/><stop offset='1' stop-color='%2300C4CC' stop-opacity='0'/></radialGradient><pattern id='_2002046508__f' width='1' height='1' patternContentUnits='objectBoundingBox'><path fill='%237D2AE7' d='M0 0h1v1H0z'/><path fill='url(%23_2002046508__a)' d='M0 0h1v1H0z'/><path fill='url(%23_2002046508__b)' d='M0 0h1v1H0z'/><path fill='url(%23_2002046508__c)' d='M0 0h1v1H0z'/><path fill='url(%23_2002046508__d)' d='M0 0h1v1H0z'/><path fill='url(%23_2002046508__e)' d='M0 0h1v1H0z'/></pattern></defs><path fill='url(%23_2002046508__f)' d='M79.444 18.096c-.136 0-.26.088-.324.272-.82 2.34-1.928 3.732-2.84 3.732-.524 0-.736-.584-.736-1.5 0-2.292 1.372-7.152 2.064-9.368.08-.268.132-.508.132-.712 0-.644-.352-.96-1.224-.96-.94 0-1.952.368-2.936 2.092-.34-1.52-1.368-2.184-2.804-2.184-1.66 0-3.264 1.068-4.584 2.8-1.32 1.732-2.872 2.3-4.04 2.02.84-2.056 1.152-3.592 1.152-4.732 0-1.788-.884-2.868-2.312-2.868-2.172 0-3.424 2.072-3.424 4.252 0 1.684.764 3.416 2.444 4.256-1.408 3.184-3.464 6.064-4.244 6.064-1.008 0-1.304-4.932-1.248-8.46.036-2.024.204-2.128.204-2.74 0-.352-.228-.592-1.144-.592-2.136 0-2.796 1.808-2.896 3.884a10.233 10.233 0 0 1-.368 2.332c-.892 3.184-2.732 5.6-3.932 5.6-.556 0-.708-.556-.708-1.284 0-2.292 1.284-5.156 1.284-7.6 0-1.796-.788-2.932-2.272-2.932-1.748 0-4.06 2.08-6.248 5.976.72-2.984 1.016-5.872-1.116-5.872A2.886 2.886 0 0 0 36 9.916a.752.752 0 0 0-.432.728c.204 3.176-2.56 11.312-5.18 11.312-.476 0-.708-.516-.708-1.348 0-2.296 1.368-7.144 2.056-9.364.088-.288.136-.536.136-.752 0-.608-.376-.92-1.228-.92-.936 0-1.952.356-2.932 2.08-.344-1.52-1.372-2.184-2.808-2.184-2.356 0-4.988 2.492-6.144 5.74-1.548 4.336-4.668 8.524-8.868 8.524-3.812 0-5.824-3.172-5.824-8.184C4.068 8.312 9.38 2.4 13.32 2.4c1.884 0 2.784 1.2 2.784 3.04 0 2.228-1.244 3.264-1.244 4.112 0 .26.216.516.644.516 1.712 0 3.728-2.012 3.728-4.756S17.004.56 13.064.56C6.552.56 0 7.112 0 15.508c0 6.68 3.296 10.708 8.996 10.708 3.888 0 7.284-3.024 9.116-6.552.208 2.924 1.536 4.452 3.56 4.452 1.8 0 3.256-1.072 4.368-2.956.428 1.972 1.564 2.936 3.04 2.936 1.692 0 3.108-1.072 4.456-3.064-.02 1.564.336 3.036 1.692 3.036.64 0 1.404-.148 1.54-.708 1.428-5.904 4.956-10.724 6.036-10.724.32 0 .408.308.408.672 0 1.604-1.132 4.892-1.132 6.992 0 2.268.964 3.768 2.956 3.768 2.208 0 4.452-2.704 5.948-6.656.468 3.692 1.48 6.672 3.064 6.672 1.944 0 5.396-4.092 7.488-8.424.82.104 2.052.076 3.236-.76-.504 1.276-.8 2.672-.8 4.068 0 4.02 1.92 5.148 3.572 5.148 1.796 0 3.252-1.072 4.368-2.956.368 1.7 1.308 2.932 3.036 2.932 2.704 0 5.052-2.764 5.052-5.032 0-.6-.256-.964-.556-.964zM23.32 21.888c-1.092 0-1.52-1.1-1.52-2.74 0-2.848 1.948-7.604 4.008-7.604.9 0 1.24 1.06 1.24 2.356 0 2.892-1.852 7.988-3.728 7.988zm37.404-8.5c-.652-.776-.888-1.832-.888-2.772 0-1.16.424-2.14.932-2.14s.664.5.664 1.196c0 1.164-.416 2.864-.708 3.716zm8.468 8.5c-1.092 0-1.52-1.264-1.52-2.74 0-2.748 1.948-7.604 4.024-7.604.9 0 1.22 1.052 1.22 2.356 0 2.892-1.82 7.988-3.724 7.988z'/></svg>"
+          />
+        </div>
+
+        <div class="menu-navbar">
+          <div class="dropdown">
+            <a href="#">Design</a>
+            <div class="menu-dropdown">
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Digital design</a>
+                <a href="#">Sheets</a>
+                <a href="#">Docs</a>
+                <a href="#">Whiteboards</a>
+                <a href="#">Presentations</a>
+                <a href="#">Social</a>
+                <a href="#">Photo Editor</a>
+                <a href="#">Videos</a>
+                <a href="#">Print</a>
+                <a href="#">Websites</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Print design</a>
+                <a href="#">Business cards</a>
+                <a href="#">Invitations</a>
+                <a href="#">Flyers</a>
+                <a href="#">Brochures</a>
+                <a href="#">T-shirts</a>
+                <a href="#">Mugs</a>
+                <a href="#">Stickers</a>
+                <a href="#">Hoodies</a>
+                <a href="#">Labels</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Images and photos</a>
+                <a href="#">Photo editor</a>
+                <a href="#">Background remover</a>
+                <a href="#">Photo collages</a>
+                <a href="#">Mockups</a>
+                <a href="#">Image enhancer</a>
+                <a href="#">AI image generator</a>
+                <a href="#">AI photo editor</a>
+                <a href="#">AI art generator</a>
+                <a href="#">Draw</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Videos and audio</a>
+                <a href="#">Video editor</a>
+                <a href="#">YouTube video editor</a>
+                <a href="#">Video trimmer</a>
+                <a href="#">Online video recorder</a>
+                <a href="#">Convert videos to MP4</a>
+                <a href="#">AI video generator</a>
+                <a href="#">Text to speech voiceover</a>
+                <a href="#">AI music generator</a>
+                <a href="#">AI voice generator</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Product</a>
+            <div class="menu-dropdown">
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Product</a>
+                <a href="#">Latest launches</a>
+                <a href="#">Visual Suite</a>
+                <a href="#">Brand management</a>
+                <a href="#">Product features</a>
+                <a href="#">Apps Marketplace</a>
+                <a href="#">Templates Marketplace</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Canva AI</a>
+                <a href="#">Magic Layers</a>
+                <a href="#">Canva AI assistant</a>
+                <a href="#">Canva Code</a>
+                <a href="#">Magic Resize</a>
+                <a href="#">Magic Animate</a>
+                <a href="#">Magic Write</a>
+                <a href="#">Translate</a>
+                <a href="#">Magic Insights</a>
+                <a href="#">Magic Formulas</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Plans</a>
+            <div class="menu-dropdown">
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Plans</a>
+                <a href="#">Compare pricing</a>
+                <a href="#">Pro</a>
+                <a href="#">Business</a>
+                <a href="#">Enterprise</a>
+                <a href="#">Nonprofits</a>
+                <a href="#">Education</a>
+                <a href="#">Higher education</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Business</a>
+            <div class="menu-dropdown">
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Canva for business</a>
+                <a href="#">Contact Sales</a>
+                <a href="#">Demo video</a>
+                <a href="#" class="column-title">Business plans</a>
+                <a href="#">Canva Enterprise</a>
+                <a href="#">Canva Business</a>
+                <a href="#" class="column-footer">All Canva for business</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Solutions</a>
+                <a href="#">Marketing</a>
+                <a href="#">Sales</a>
+                <a href="#">IT</a>
+                <a href="#">Creatives</a>
+                <a href="#">Higher education</a>
+                <a href="#">Real estate</a>
+                <a href="#">Government</a>
+                <a href="#">Small business</a>
+                <a href="#" class="column-footer">All solutions</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Features</a>
+                <a href="#">Brand management</a>
+                <a href="#">Content creation</a>
+                <a href="#">Team management</a>
+                <a href="#">Security and SSO</a>
+                <a href="#">Integration apps</a>
+                <a href="#">Brand templates</a>
+                <a href="#" class="column-footer">All features</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Resources</a>
+                <a href="#">Case studies</a>
+                <a href="#">Enterprise onboarding</a>
+                <a href="#">Partners directory</a>
+                <a href="#" class="column-title">Reports</a>
+                <a href="#">Marketing and AI</a> <a href="#">Visual Comms</a>
+                <a href="#">TEI of Canva Enterprise</a>
+                <a href="#" class="column-footer">All resources</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Education</a>
+
+            <div class="menu-dropdown">
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Canva for education</a>
+                <a href="#">Education overview</a>
+                <a href="#">Canva for students</a>
+                <a href="#">Education plans</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">K-12 education</a>
+                <a href="#">Canva for schools and districts</a>
+                <a href="#">Product features</a>
+                <a href="#">LMS integrations</a>
+                <a href="#">K-12 case studies</a>
+                <a href="#">Contact us</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">K-12 teachers</a>
+                <a href="#">Canva for teachers</a>
+                <a href="#">Eligibility guidelines</a>
+                <a href="#">Teaching resources</a>
+                <a href="#">Teacher communities</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Higher education</a>
+                <a href="#">Canva for higher education</a>
+                <a href="#">Case studies</a>
+                <a href="#">Contact Campus Sales</a>
+                <a href="#" class="column-title">Campus solutions</a>
+                <a href="#">Academic success</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Brand management</a>
+                <a href="#">Security and SSO</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Help</a>
+            <div class="menu-dropdown">
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Help</a>
+                <a href="#">Help Center</a>
+                <a href="#">Design School</a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="column-title">Create guides</a>
+                <a href="#">Logos</a>
+                <a href="#">Flyers</a>
+                <a href="#">Banners</a>
+                <a href="#">Posters</a>
+                <a href="#">Resumes</a>
+                <a href="#">Photo collages</a>
+                <a href="#">YouTube thumbnails</a>
+                <a href="#" class="column-title">All create guides</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          <button class="dangky">Sign up</button>
+          <button class="dangnhap">Log in</button>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="hero-left">
+          <img
+            src="https://content-management-files.canva.com/bef55557-7453-4f55-a5a0-33babb9d53d9/image-1.png"
+            alt="A person using a laptop with another person watching"
+            height="190"
+            width="198"
+            loading="eager"
+            class="image-1"
+            style="object-fit: cover; object-position: center center"
+          />
+          <img
+            src="https://content-management-files.canva.com/c5bbe1e7-3a7c-4433-bed5-ffc8f7de472e/image-2.png"
+            alt="A person writing down notes on their tablet"
+            height="131"
+            width="124"
+            loading="eager"
+            class="image-2"
+            style="object-fit: cover; object-position: center center"
+          />
+          <img
+            src="https://content-management-files.canva.com/f7993c36-83fc-415f-99db-9b98c3dff4ed/image-3.png"
+            alt="A person holding a baby presenting a design made using Canva"
+            height="286"
+            width="272"
+            loading="eager"
+            class="image-3"
+            style="object-fit: cover; object-position: center center"
+          />
+        </div>
+        <div class="hero-center">
+          <h2>Empowering the world to design</h2>
+        </div>
+        <div class="hero-right">
+          <img
+            src="https://content-management-files.canva.com/620f037e-46e5-430c-8575-f4c8e0662aeb/image-4.png"
+            alt="A person using Canva with their laptop"
+            height="330"
+            width="300"
+            loading="eager"
+            class="image-4"
+            style="object-fit: cover; object-position: center center"
+          />
+          <img
+            src="https://content-management-files.canva.com/d78b8527-96ff-44b2-8c97-16ebd7ef8e52/image-5.png"
+            alt="A person showing another person their iPad"
+            height="183"
+            width="198"
+            loading="eager"
+            class="image-5"
+            style="object-fit: cover; object-position: center center"
+          />
+
+          <img
+            src="https://content-management-files.canva.com/9d307b68-c01a-4ec8-b613-d6a1f0677552/image-6.png"
+            alt="A person presenting a design they created with their laptop using Canva"
+            height="224"
+            width="230"
+            loading="eager"
+            class="image-6"
+            style="object-fit: cover; object-position: center center"
+          />
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stats-first">TRUSTED BY</div>
+        <div class="icon">
+          <img
+            src="https://static-cse.canva.com/_next/static/media/zoom-20220313.file.063825cf.png"
+            alt="Zoom"
+            height="280"
+            width="120"
+            loading="lazy"
+            class="vNkAEH9 K4Eyfzx E83deBw"
+            style="
+              object-fit: contain;
+              object-position: center center;
+              filter: brightness(0);
+            "
+          />
+          <img
+            src="https://static-cse.canva.com/_next/static/media/bloomingdales.file.b2ebbaed.png"
+            alt="Bloomingdale's"
+            loading="lazy"
+            height="280"
+            width="130"
+            class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center"
+          />
+          <img
+            src="https://static-cse.canva.com/_next/static/media/danone.file.4a3aa354.png"
+            alt="Danone"
+            loading="lazy"
+            height="280"
+            width="130"
+            class="vNkAEH9 make-black"
+            style="object-fit: contain; object-position: center center"
+          />
+          <img
+            src="https://static-cse.canva.com/_next/static/media/airbnb.file.902d573d.png"
+            alt="Airbnb"
+            loading="lazy"
+            height="280"
+            width="130"
+            class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center"
+          />
+          <img
+            src="https://static-cse.canva.com/_next/static/media/salesforce.file.a3641534.svg"
+            alt="Salesforce"
+            loading="lazy"
+            height="280"
+            width="130"
+            class="music"
+            style="object-fit: contain; object-position: center center"
+          />
+        </div>
+      </div>
+      <div class="report">
+        <div class="report-first">
+          <p>
+            Launched in 2013, Canva is an online design and publishing tool with
+            a mission to empower everyone in the world to design anything and
+            publish anywhere.
+          </p>
+        </div>
+        <div class="report-second">
+          <div class="item">
+            <h3>220M+</h3>
+            <p>Monthly active users</p>
+          </div>
+          <div class="item">
+            <h3>30B+</h3>
+            <p>Designs created</p>
+          </div>
+          <div class="item">
+            <h3>190</h3>
+            <p>Countries</p>
+          </div>
+          <div class="item">
+            <h3>100+</h3>
+            <p>Languages</p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Our values</h2>
+        <div class="section-slider">
+          <button class="section-prev">&#10094;</button>
+          <div class="section-viewport">
+            <div class="section-img">
+              <div class="section-img-item">
+                <img
+                  src="https://content-management-files.canva.com/77a7e4fe-3a6e-4a25-a0ab-2fb3d01dd412/1-Beforceforgood.png"
+                  alt="A heart shaped plant graphic"
+                  height="310"
+                  width="275"
+                  loading="lazy"
+                  class="image-7"
+                  style="object-fit: cover; object-position: center center"
+                />
+                <h3>Be a force for good</h3>
+                <p>
+                  Making the world a better place through positive actions,
+                  inclusion and diversity
+                </p>
+              </div>
+              <div class="section-img-item">
+                <img
+                  src="https://content-management-files.canva.com/5d651d0c-0115-4ba6-80d5-9315ac163f6d/2-Begoodhuman.png"
+                  alt="Three people smiling graphic"
+                  height="310"
+                  width="275"
+                  loading="lazy"
+                  class="image-7"
+                  style="object-fit: cover; object-position: center center"
+                />
+                <h3>Be a good human</h3>
+                <p>
+                  Valuing good communication. Being open, honest and
+                  constructive: individually, within your team, across the
+                  company, and externally.
+                </p>
+              </div>
+              <div class="section-img-item">
+                <img
+                  src="https://content-management-files.canva.com/e61264bc-50ae-43ba-973f-51b75a690b5f/3-Empowerothers.png"
+                  alt="Graphic of a tiny person on a hand"
+                  height="310"
+                  width="275"
+                  loading="lazy"
+                  class="image-7"
+                  style="object-fit: cover; object-position: center center"
+                />
+                <h3>Empower others</h3>
+                <p>
+                  Empowering others to achieve their goals, both globally and
+                  within Canva.
+                </p>
+              </div>
+              <div class="section-img-item">
+                <img
+                  src="https://content-management-files.canva.com/95deaa1e-b0c0-471b-a748-e64868be988b/4-Complexthingssimple.png"
+                  alt="A completed maze graphic"
+                  height="310"
+                  width="275"
+                  loading="lazy"
+                  class="image-7"
+                  style="object-fit: cover; object-position: center center"
+                />
+                <h3>Make complex things simple</h3>
+                <p>
+                  Always aiming for the most simple, pragmatic and effective
+                  solution to any problem. Think of the user.
+                </p>
+              </div>
+              <div class="section-img-item">
+                <img
+                  src="https://content-management-files.canva.com/e4431cd8-4645-4a27-b397-0c85e26fccd8/5-Pursueexcellence.png"
+                  alt="A trophy graphic"
+                  height="310"
+                  width="275"
+                  loading="lazy"
+                  class="image-7"
+                  style="object-fit: cover; object-position: center center"
+                />
+                <h3>Pursue excellence</h3>
+                <p>
+                  Maintain a high bar for ourselves and the people we work with.
+                  Continuous growth and development. Lead by example.
+                </p>
+              </div>
+              <div class="section-img-item">
+                <img
+                  src="https://content-management-files.canva.com/91987682-c041-4237-8bdd-e9fd7d42a0be/6-Crazybiggoals.png"
+                  alt="A person in a space suit planting down a flag graphic"
+                  height="310"
+                  width="275"
+                  loading="lazy"
+                  class="image-7"
+                  style="object-fit: cover; object-position: center center"
+                />
+                <h3>Set crazy big goals and make them happen</h3>
+                <p>
+                  Set ambitious goals, prioritise, hustle to execute and
+                  celebrate success!
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="section-next">&#10095;</button>
+        </div>
+      </div>
+      <div class="commitments">
+        <div class="commitments-first">
+          <h2>Our commitments</h2>
+        </div>
+        <div class="commitments-second">
+          <img
+            alt="A student holding chemistry text books, standing in front of a rustic home"
+            loading="lazy"
+            class="image-8"
+            src="https://content-management-files.canva.com/ac80d8c5-f7c7-4111-9bab-bbdb090559a7/About_StepTwo-Desktop.jpg"
+            style="object-fit: cover; object-position: center center"
+          />
+          <p>CANVA STEP TWO</p>
+          <h3>Doing the most good we can with our Two-Step Plan.</h3>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="commitments-third">
+          <div class="commitments-third-item1">
+            <img
+              alt="A photo of a hill"
+              height="625"
+              width="625"
+              loading="lazy"
+              class="vNkAEH9 K4Eyfzx E83deBw"
+              src="https://content-management-files.canva.com/61bb06dc-76a5-4f72-b20e-83d28dedbea7/Sustainability.png"
+              style="object-fit: cover; object-position: center center"
+            />
+            <p>SUSTAINABILITY AT CANVA</p>
+            <h3>It’s our world, and our <span>responsibility.</span></h3>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="commitments-third-item2">
+            <img
+              alt="A photo of a laptop on a table"
+              height="625"
+              width="625"
+              loading="lazy"
+              class="vNkAEH9 K4Eyfzx E83deBw"
+              src="https://content-management-files.canva.com/cc83142e-7869-4564-bfd7-e76d077c09a8/Trust.png"
+              style="object-fit: cover; object-position: center center"
+            />
+            <p>TRUST CENTER</p>
+            <h3>
+              Creating a safe and trusted <span>place for creativity.</span>
+            </h3>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="awards">
+        <div class="awards-first">
+          <h2>Awards and recognition</h2>
+        </div>
+
+        <div class="awards-second">
+          <div class="awards-second-item">
+            <div class="img-container">
+              <img
+                src="https://static-cse.canva.com/_next/static/media/cybercx.7d1a2911.png"
+                alt="CyberCX Award"
+                loading="lazy"
+                class="award-img"
+              />
+            </div>
+            <p class="award-title">Large Enterprise</p>
+            <p class="award-desc">2024 Winner, Privacy by Design Awards</p>
+          </div>
+
+          <div class="awards-second-item">
+            <div class="img-container">
+              <img
+                src="https://static-cse.canva.com/_next/static/media/fastcompany.4662bef7.png"
+                alt="Fast Company Award"
+                loading="lazy"
+                class="award-img1"
+              />
+            </div>
+            <p class="award-title">Design Company of the Year</p>
+            <p class="award-desc">2023 Winner, Innovation by Design Awards</p>
+          </div>
+
+          <div class="awards-second-item">
+            <div class="img-container">
+              <img
+                src="https://static-cse.canva.com/_next/static/media/time.68263d1f.png"
+                alt="Time Award"
+                loading="lazy"
+                class="award-img make-black"
+              />
+            </div>
+            <p class="award-title">Apps: Magic Studio</p>
+            <p class="award-desc">2024 Winner, Best Innovations</p>
+          </div>
+
+          <div class="awards-second-item">
+            <div class="img-container">
+              <img
+                src="https://static-cse.canva.com/_next/static/media/fastcompany.4662bef7.png"
+                alt="Fast Company Award"
+                loading="lazy"
+                class="award-img1"
+              />
+            </div>
+            <p class="award-title">AI: Magic Studio</p>
+            <p class="award-desc">2024 Winner, Innovation by Design Awards</p>
+          </div>
+
+          <div class="awards-second-item">
+            <div class="img-container">
+              <img
+                src="https://static-cse.canva.com/_next/static/media/global_ready.d7ab9cf9.png"
+                alt="Global Ready Conference Award"
+                loading="lazy"
+                class="award-img"
+              />
+            </div>
+            <p class="award-title">Accessibility Award</p>
+            <p class="award-desc">2022 Winner, Smartling</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-container">
+          <div class="testimonial-first">
+            <div class="testimonial-first-img active">
+              <img
+                src="https://content-management-files.canva.com/b021c408-aba3-4c6c-b891-80ee95c4adfa/zoom-img.png"
+                alt="Zoom"
+              />
+            </div>
+            <div class="testimonial-first-img">
+              <img
+                src="https://content-management-files.canva.com/caa4b847-faed-453b-aa39-f0381b80f2f5/amnesy.png"
+                alt="Amnesty"
+              />
+            </div>
+            <div class="testimonial-first-img">
+              <img
+                src="https://content-management-files.canva.com/fcb4145c-c67e-4ba0-b4fb-577d8d685257/GeorgeLee.png"
+                alt="George Lee"
+              />
+            </div>
+            <div class="testimonial-first-img">
+              <img
+                src="https://content-management-files.canva.com/a425dce9-3eef-4dc6-99d4-41aaeac48ca9/up.png"
+                alt="Upworthy"
+              />
+            </div>
+          </div>
+
+          <div class="testimonial-second">
+            <div class="testimonial-second-quote">“</div>
+
+            <div class="testimonial-second-box">
+              <div class="testimonial-second-item active">
+                <p class="text-main">
+                  "Canva will play an important role in helping us to continue
+                  scaling our brand and marketing efforts while empowering our
+                  growing team to create content rapidly."
+                </p>
+                <div class="text-container">
+                  <p class="text-author">Brandon Realmonte</p>
+                  <p class="text-role">Global Creative Manager, Zoom</p>
+                </div>
+              </div>
+
+              <div class="testimonial-second-item">
+                <p class="text-main">
+                  "We have to act fast. Graphic content often needs to be turned
+                  around in just minutes – so the templates available through
+                  Canva Pro are great for that."
+                </p>
+                <p class="text-author">Jessie Mawson</p>
+                <p class="text-role">
+                  Social Media Specialist, Amnesty International Australia
+                </p>
+              </div>
+
+              <div class="testimonial-second-item">
+                <p class="text-main">
+                  "With Canva Education, the amazing thing – not just for the
+                  students but for me – is that I get to see their creative
+                  minds in progress."
+                </p>
+                <p class="text-author">George Lee</p>
+                <p class="text-role">
+                  CAST Academy Coordinator, Balboa High School
+                </p>
+              </div>
+
+              <div class="testimonial-second-item">
+                <p class="text-main">
+                  “We can put our visual content together very easily and
+                  consistently, and we can edit graphics across the entire team,
+                  which is a huge advantage.”
+                </p>
+                <p class="text-author">Megan Kelley</p>
+                <p class="text-role">Upworthy writer</p>
+              </div>
+            </div>
+
+            <div class="testimonial-second-nav">
+              <button class="testimonial-button active"></button>
+              <button class="testimonial-button"></button>
+              <button class="testimonial-button"></button>
+              <button class="testimonial-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="careers">
+        <div class="careers-container">
+          <div class="careers-first">
+            <p>CAREERS</p>
+            <h3>Join our mission to empower the world to design.</h3>
+            <a href="#">See careers</a>
+          </div>
+          <div class="careers-second">
+            <img
+              src="https://content-management-files.canva.com/886cb51a-01a7-43f2-ad7a-d9a7148074c4/careers-img.png"
+              alt="Two people on their laptops communicating with each other"
+              height="500"
+              width="100%"
+              loading="lazy"
+              class="vNkAEH9 K4Eyfzx E83deBw"
+              style="object-fit: cover; object-position: center center"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="newsroom">
+        <div class="newsroom-first">
+          <h2>Newsroom</h2>
+          <a href="#" class="newsroom-btn">Go to Newsroom</a>
+        </div>
+
+        <div class="newsroom-second">
+          <div class="newsroom-item">
+            <div class="newsroom-item-img">
+              <img
+                src="https://content-management-files.canva.com/59d7223f-51b8-4dd9-b1f3-83260e7c67b9/CARC25001_Newsroom_Wave2_1920x1080.png"
+                alt="Canva Create Uncharted"
+              />
+            </div>
+            <p class="newsroom-item-category">OUR COMPANY</p>
+            <h3 class="newsroom-item-title">
+              Canva Create returns for 2025: Our biggest event yet
+            </h3>
+          </div>
+
+          <div class="newsroom-item">
+            <div class="newsroom-item-img">
+              <img
+                src="https://content-management-files.canva.com/91a5f9d2-e4c5-4ef6-a833-5f7e79ab811a/Attention_economy_webinar_thumbnail.png"
+                alt="Winning in the Attention Economy"
+              />
+            </div>
+            <p class="newsroom-item-category">BUSINESS</p>
+            <h3 class="newsroom-item-title">
+              Winning in the Attention Economy: How to break through the noise
+            </h3>
+          </div>
+
+          <div class="newsroom-item">
+            <div class="newsroom-item-img">
+              <img
+                src="https://content-management-files.canva.com/03fe22ef-105a-4d1a-9b33-5bc9ee6406e7/587133a9-394e-44d5-9cdd-b7f810069df4.jpg"
+                alt="AI in the Classroom"
+                class="math"
+              />
+            </div>
+            <p class="newsroom-item-category">EDUCATION</p>
+            <h3 class="newsroom-item-title">
+              AI in the Classroom: A new Canva certification for teachers
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="word-us">
+        <div class="word-us-first">
+          <h2>A word from all of us</h2>
+          <p>
+            At Canva, we acknowledge the Traditional Custodians of country
+            throughout Australia and their connections to land, sea and
+            community. We pay our respect to their elders past and present and
+            extend that respect to all Aboriginal and Torres Strait Islander
+            peoples today.
+          </p>
+        </div>
+
+        <div class="word-us-second">
+          <img
+            src="https://content-management-files.canva.com/0c4760c8-c8be-4007-a2de-0a8242f36171/Illustration1.png"
+            alt="Left Plant"
+            class="flower-left"
+          />
+
+          <img
+            src="https://content-management-files.canva.com/6aa5f48a-3780-45b1-b5ae-d9a4dc936ac9/Illustration2.png"
+            alt="Right Plant"
+            class="flower-right"
+          />
+        </div>
+      </div>
+      <div class="canva">
+        <img
+          alt=""
+          role="presentation"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDgwIDMwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9Il8yMDAyMDQ2NTA4X19hIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjIxIC0uNjczNTMgLjI1NDUgLjA3OTM1IC41MTIgMS4xMDkpIj48c3RvcCBzdG9wLWNvbG9yPSIjNjQyMEZGIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjQyMEZGIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iXzIwMDIwNDY1MDhfX2IiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguNTg0IC4xNjIxNSAtLjM3NzEgMS4zNTgyIC4wMjQgLjY2NikiPjxzdG9wIG9mZnNldD0iLjI1IiBzdG9wLWNvbG9yPSIjMDBDNENDIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDBDNENDIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iXzIwMDIwNDY1MDhfX2MiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguMjk0MjUgLS43MzkgLjM1NTUgLjE0MTU1IC40MjcgMSkiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fZCIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC4zOTE1IC0uNTk4NjkgLjQ3NDMgLjMxMDE2IC4wMjggMSkiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fZSIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDM0LjU5MyAtLjEgLjIpIHNjYWxlKDEuMDMyNTUgMi44MDY4OCkiPjxzdG9wIHN0b3AtY29sb3I9IiMwMEM0Q0MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMEM0Q0MiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdHRlcm4gaWQ9Il8yMDAyMDQ2NTA4X19mIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+PHBhdGggZmlsbD0iIzdEMkFFNyIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19hKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19iKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19jKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19kKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19lKSIgZD0iTTAgMGgxdjFIMHoiLz48L3BhdHRlcm4+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjXzIwMDIwNDY1MDhfX2YpIiBkPSJNNzkuNDQ0IDE4LjA5NmMtLjEzNiAwLS4yNi4wODgtLjMyNC4yNzItLjgyIDIuMzQtMS45MjggMy43MzItMi44NCAzLjczMi0uNTI0IDAtLjczNi0uNTg0LS43MzYtMS41IDAtMi4yOTIgMS4zNzItNy4xNTIgMi4wNjQtOS4zNjguMDgtLjI2OC4xMzItLjUwOC4xMzItLjcxMiAwLS42NDQtLjM1Mi0uOTYtMS4yMjQtLjk2LS45NCAwLTEuOTUyLjM2OC0yLjkzNiAyLjA5Mi0uMzQtMS41Mi0xLjM2OC0yLjE4NC0yLjgwNC0yLjE4NC0xLjY2IDAtMy4yNjQgMS4wNjgtNC41ODQgMi44LTEuMzIgMS43MzItMi44NzIgMi4zLTQuMDQgMi4wMi44NC0yLjA1NiAxLjE1Mi0zLjU5MiAxLjE1Mi00LjczMiAwLTEuNzg4LS44ODQtMi44NjgtMi4zMTItMi44NjgtMi4xNzIgMC0zLjQyNCAyLjA3Mi0zLjQyNCA0LjI1MiAwIDEuNjg0Ljc2NCAzLjQxNiAyLjQ0NCA0LjI1Ni0xLjQwOCAzLjE4NC0zLjQ2NCA2LjA2NC00LjI0NCA2LjA2NC0xLjAwOCAwLTEuMzA0LTQuOTMyLTEuMjQ4LTguNDYuMDM2LTIuMDI0LjIwNC0yLjEyOC4yMDQtMi43NCAwLS4zNTItLjIyOC0uNTkyLTEuMTQ0LS41OTItMi4xMzYgMC0yLjc5NiAxLjgwOC0yLjg5NiAzLjg4NGExMC4yMzMgMTAuMjMzIDAgMCAxLS4zNjggMi4zMzJjLS44OTIgMy4xODQtMi43MzIgNS42LTMuOTMyIDUuNi0uNTU2IDAtLjcwOC0uNTU2LS43MDgtMS4yODQgMC0yLjI5MiAxLjI4NC01LjE1NiAxLjI4NC03LjYgMC0xLjc5Ni0uNzg4LTIuOTMyLTIuMjcyLTIuOTMyLTEuNzQ4IDAtNC4wNiAyLjA4LTYuMjQ4IDUuOTc2LjcyLTIuOTg0IDEuMDE2LTUuODcyLTEuMTE2LTUuODcyQTIuODg2IDIuODg2IDAgMCAwIDM2IDkuOTE2YS43NTIuNzUyIDAgMCAwLS40MzIuNzI4Yy4yMDQgMy4xNzYtMi41NiAxMS4zMTItNS4xOCAxMS4zMTItLjQ3NiAwLS43MDgtLjUxNi0uNzA4LTEuMzQ4IDAtMi4yOTYgMS4zNjgtNy4xNDQgMi4wNTYtOS4zNjQuMDg4LS4yODguMTM2LS41MzYuMTM2LS43NTIgMC0uNjA4LS4zNzYtLjkyLTEuMjI4LS45Mi0uOTM2IDAtMS45NTIuMzU2LTIuOTMyIDIuMDgtLjM0NC0xLjUyLTEuMzcyLTIuMTg0LTIuODA4LTIuMTg0LTIuMzU2IDAtNC45ODggMi40OTItNi4xNDQgNS43NC0xLjU0OCA0LjMzNi00LjY2OCA4LjUyNC04Ljg2OCA4LjUyNC0zLjgxMiAwLTUuODI0LTMuMTcyLTUuODI0LTguMTg0QzQuMDY4IDguMzEyIDkuMzggMi40IDEzLjMyIDIuNGMxLjg4NCAwIDIuNzg0IDEuMiAyLjc4NCAzLjA0IDAgMi4yMjgtMS4yNDQgMy4yNjQtMS4yNDQgNC4xMTIgMCAuMjYuMjE2LjUxNi42NDQuNTE2IDEuNzEyIDAgMy43MjgtMi4wMTIgMy43MjgtNC43NTZTMTcuMDA0LjU2IDEzLjA2NC41NkM2LjU1Mi41NiAwIDcuMTEyIDAgMTUuNTA4YzAgNi42OCAzLjI5NiAxMC43MDggOC45OTYgMTAuNzA4IDMuODg4IDAgNy4yODQtMy4wMjQgOS4xMTYtNi41NTIuMjA4IDIuOTI0IDEuNTM2IDQuNDUyIDMuNTYgNC40NTIgMS44IDAgMy4yNTYtMS4wNzIgNC4zNjgtMi45NTYuNDI4IDEuOTcyIDEuNTY0IDIuOTM2IDMuMDQgMi45MzYgMS42OTIgMCAzLjEwOC0xLjA3MiA0LjQ1Ni0zLjA2NC0uMDIgMS41NjQuMzM2IDMuMDM2IDEuNjkyIDMuMDM2LjY0IDAgMS40MDQtLjE0OCAxLjU0LS43MDggMS40MjgtNS45MDQgNC45NTYtMTAuNzI0IDYuMDM2LTEwLjcyNC4zMiAwIC40MDguMzA4LjQwOC42NzIgMCAxLjYwNC0xLjEzMiA0Ljg5Mi0xLjEzMiA2Ljk5MiAwIDIuMjY4Ljk2NCAzLjc2OCAyLjk1NiAzLjc2OCAyLjIwOCAwIDQuNDUyLTIuNzA0IDUuOTQ4LTYuNjU2LjQ2OCAzLjY5MiAxLjQ4IDYuNjcyIDMuMDY0IDYuNjcyIDEuOTQ0IDAgNS4zOTYtNC4wOTIgNy40ODgtOC40MjQuODIuMTA0IDIuMDUyLjA3NiAzLjIzNi0uNzYtLjUwNCAxLjI3Ni0uOCAyLjY3Mi0uOCA0LjA2OCAwIDQuMDIgMS45MiA1LjE0OCAzLjU3MiA1LjE0OCAxLjc5NiAwIDMuMjUyLTEuMDcyIDQuMzY4LTIuOTU2LjM2OCAxLjcgMS4zMDggMi45MzIgMy4wMzYgMi45MzIgMi43MDQgMCA1LjA1Mi0yLjc2NCA1LjA1Mi01LjAzMiAwLS42LS4yNTYtLjk2NC0uNTU2LS45NjR6TTIzLjMyIDIxLjg4OGMtMS4wOTIgMC0xLjUyLTEuMS0xLjUyLTIuNzQgMC0yLjg0OCAxLjk0OC03LjYwNCA0LjAwOC03LjYwNC45IDAgMS4yNCAxLjA2IDEuMjQgMi4zNTYgMCAyLjg5Mi0xLjg1MiA3Ljk4OC0zLjcyOCA3Ljk4OHptMzcuNDA0LTguNWMtLjY1Mi0uNzc2LS44ODgtMS44MzItLjg4OC0yLjc3MiAwLTEuMTYuNDI0LTIuMTQuOTMyLTIuMTRzLjY2NC41LjY2NCAxLjE5NmMwIDEuMTY0LS40MTYgMi44NjQtLjcwOCAzLjcxNnptOC40NjggOC41Yy0xLjA5MiAwLTEuNTItMS4yNjQtMS41Mi0yLjc0IDAtMi43NDggMS45NDgtNy42MDQgNC4wMjQtNy42MDQuOSAwIDEuMjIgMS4wNTIgMS4yMiAyLjM1NiAwIDIuODkyLTEuODIgNy45ODgtMy43MjQgNy45ODh6Ii8+PC9zdmc+"
+        />
+      </div>
+      <div class="download">
+        <div class="download-container">
+          <div class="download-first">
+            <h3 class="download-title-main">Download Canva for free</h3>
+            <div class="download-btn-group">
+              <a href="#" class="download-btn-os">Windows</a>
+              <a href="#" class="download-btn-os">Mac</a>
+            </div>
+          </div>
+          <div class="download-second">
+            <div class="download-column">
+              <h4 class="download-title">Product</h4>
+              <ul>
+                <li><a href="#">Latest launches</a></li>
+                <li><a href="#">Visual Suite</a></li>
+                <li><a href="#">Canva AI</a></li>
+                <li><a href="#">Brand management</a></li>
+                <li><a href="#">Social media</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Print</a></li>
+                <li><a href="#">Apps Marketplace</a></li>
+                <li><a href="#">Affinity ↗</a></li>
+              </ul>
+
+              <h4 class="download-title" style="margin-top: 48px">Plans</h4>
+              <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Pro</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Higher education</a></li>
+                <li><a href="#">Nonprofits</a></li>
+                <li><a href="#">Contact Sales</a></li>
+              </ul>
+            </div>
+
+            <div class="download-column">
+              <h4 class="download-title">About</h4>
+              <ul>
+                <li><a href="#">About Canva</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Canva Originals</a></li>
+                <li><a href="#">Careers ↗</a></li>
+                <li><a href="#">Social impact</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Case studies</a></li>
+              </ul>
+
+              <h4 class="download-title" style="margin-top: 48px">Community</h4>
+              <ul>
+                <li><a href="#">Canva Communities</a></li>
+                <li><a href="#">Creators</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Canva Represents Fund</a></li>
+                <li><a href="#">Content partners</a></li>
+                <li><a href="#">Business partner directory</a></li>
+                <li><a href="#">Canva Developers ↗</a></li>
+              </ul>
+
+              <h4 class="download-title" style="margin-top: 48px">
+                Inspiration
+              </h4>
+              <ul>
+                <li><a href="#">Design Trends</a></li>
+                <li><a href="#">AI creativity podcast ↗</a></li>
+                <li><a href="#">Learn blog</a></li>
+                <li><a href="#">Templates Marketplace</a></li>
+                <li><a href="#">Font pairing</a></li>
+                <li><a href="#">Color wheel</a></li>
+                <li><a href="#">Colors</a></li>
+                <li><a href="#">Color palette generator</a></li>
+              </ul>
+            </div>
+            <div class="download-column">
+              <h4 class="download-title">Help</h4>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Trust Center</a></li>
+                <li><a href="#">Canva Safe AI</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Enterprise services</a></li>
+                <li><a href="#">Design School ↗</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+
+              <h4 class="download-title" style="margin-top: 48px">Tools</h4>
+              <ul>
+                <li><a href="#">QR code generator</a></li>
+                <li><a href="#">AI logo generator</a></li>
+                <li><a href="#">Signature generator</a></li>
+                <li><a href="#">Business name generator</a></li>
+                <li><a href="#">PDF converter</a></li>
+                <li><a href="#">PDF to JPG converter</a></li>
+                <li><a href="#">JPG to PDF converter</a></li>
+                <li><a href="#">Graph maker</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <div class="logo-first">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.288-.244-2.52-.687-3.65v-.1h-.04A10.003 10.003 0 0 0 12 2C6.477 2 2 6.477 2 12Zm12.653-8.078A8.526 8.526 0 0 1 19.63 8.25h-3.457c-.317-1.74-.848-3.236-1.52-4.328ZM20.2 9.75h-3.813c.075.723.114 1.476.114 2.25s-.04 1.527-.114 2.25h3.813A8.51 8.51 0 0 0 20.5 12a8.51 8.51 0 0 0-.301-2.25Zm-.569 6h-3.457c-.317 1.74-.848 3.236-1.52 4.328a8.526 8.526 0 0 0 4.977-4.328Zm-4.755-1.5a20.109 20.109 0 0 0 0-4.5h-5.75a20.116 20.116 0 0 0 0 4.5h5.75Zm-5.519 1.5h5.288C14.08 18.593 12.953 20.5 12 20.5c-.953 0-2.081-1.907-2.644-4.75Zm-1.529 0c.317 1.74.848 3.236 1.52 4.328A8.526 8.526 0 0 1 4.37 15.75h3.457Zm-.213-1.5H3.801A8.51 8.51 0 0 1 3.5 12c0-.779.105-1.533.301-2.25h3.813A21.9 21.9 0 0 0 7.5 12c0 .774.04 1.527.114 2.25ZM12 3.5c.953 0 2.081 1.907 2.644 4.75H9.356C9.92 5.407 11.047 3.5 12 3.5ZM4.37 8.25h3.457c.317-1.74.848-3.236 1.52-4.328A8.525 8.525 0 0 0 4.37 8.25Z"
+            fill="currentColor"
+          ></path>
+        </div>
+      </div>
+      <div class="logo">
+        <div class="logo-container">
+          <div class="logo-first">
+            <div class="logo-lang">
+              <i class="fa-solid fa-earth-americas"></i>
+              <span>English (US)</span>
+            </div>
+
+            <div class="logo-socials">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="#" aria-label="TikTok"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="#" aria-label="Pinterest"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+              <a href="#" aria-label="X (Twitter)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="logo-second">
+            <a href="#" class="logo-link">Privacy</a>
+            <a href="#" class="logo-link">Terms</a>
+            <span class="logo-copyright">© 2026 All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
