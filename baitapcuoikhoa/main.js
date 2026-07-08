@@ -1,20 +1,71 @@
+// hieu ung luot qua luot ve va button prev va next
+const viewport = document.querySelector(".section-viewport");
 const sectionImg = document.querySelector(".section-img");
 const next = document.querySelector(".section-next");
 const prev = document.querySelector(".section-prev");
 
 next.onclick = function () {
-  sectionImg.style.transform = "translateX(-620px)";
+  if (window.innerWidth <= 768) {
+    let step = (viewport.scrollWidth - viewport.clientWidth) / 2;
+    viewport.scrollLeft = viewport.scrollLeft + step;
+    updateButtons();
+  } else {
+    let scrollAmount = viewport.clientWidth;
+    viewport.scrollLeft = viewport.scrollLeft + scrollAmount;
 
-  next.style.display = "none";
-  prev.style.display = "block";
+    next.style.display = "none";
+    prev.style.display = "block";
+  }
 };
 
 prev.onclick = function () {
-  sectionImg.style.transform = "translateX(0px)";
+  if (window.innerWidth <= 768) {
+    let step = (viewport.scrollWidth - viewport.clientWidth) / 2;
+    viewport.scrollLeft = viewport.scrollLeft - step;
+    updateButtons();
+  } else {
+    viewport.scrollLeft = 0;
 
-  prev.style.display = "none";
-  next.style.display = "block";
+    prev.style.display = "none";
+    next.style.display = "block";
+  }
 };
+
+function updateButtons() {
+  if (viewport.scrollLeft <= 5) {
+    prev.style.display = "none";
+  } else {
+    prev.style.display = "block";
+  }
+
+  let maxScroll = viewport.scrollWidth - viewport.clientWidth;
+  if (viewport.scrollLeft >= maxScroll - 5) {
+    next.style.display = "none";
+  } else {
+    next.style.display = "block";
+  }
+}
+
+let isMouseDown = false;
+
+viewport.addEventListener("mousedown", function () {
+  isMouseDown = true;
+});
+
+viewport.addEventListener("mouseup", function () {
+  isMouseDown = false;
+});
+
+viewport.addEventListener("mouseleave", function () {
+  isMouseDown = false;
+});
+
+viewport.addEventListener("mousemove", function (e) {
+  if (isMouseDown) {
+    viewport.scrollLeft -= e.movementX;
+  }
+});
+//
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".testimonial-button");
   const images = document.querySelectorAll(".testimonial-first-img");
@@ -49,28 +100,7 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
-// hieu  ung luot qua luot ve
-const viewport = document.querySelector(".section-viewport");
 
-let isMouseDown = false;
-
-viewport.addEventListener("mousedown", function () {
-  isMouseDown = true;
-});
-
-viewport.addEventListener("mouseup", function () {
-  isMouseDown = false;
-});
-
-viewport.addEventListener("mouseleave", function () {
-  isMouseDown = false;
-});
-
-viewport.addEventListener("mousemove", function (e) {
-  if (isMouseDown) {
-    viewport.scrollLeft -= e.movementX;
-  }
-});
 document.addEventListener("DOMContentLoaded", function () {
   var dropdownList = document.querySelectorAll(".menu-navbar > .dropdown");
 
@@ -105,6 +135,11 @@ document.addEventListener("DOMContentLoaded", function () {
   loginButton.className = "mobile-menu-login";
   loginButton.textContent = "Log in";
   screenLevel1.appendChild(loginButton);
+
+  var signupButton = document.createElement("button");
+  signupButton.className = "mobile-menu-signup";
+  signupButton.textContent = "Sign up";
+  screenLevel1.appendChild(signupButton);
 
   menuPanel.appendChild(screenLevel1);
 
