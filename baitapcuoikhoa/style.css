@@ -1341,7 +1341,7 @@ svg {
 
   .commitments-third-item2 h3 {
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -1388,6 +1388,7 @@ svg {
   .commitments-first h2 {
     font-size: 35px;
   }
+
   .commitments-second img {
     height: 350px;
   }
