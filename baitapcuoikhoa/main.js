@@ -73,7 +73,8 @@ viewport.addEventListener("mousemove", function (e) {
     viewport.scrollLeft -= e.movementX;
   }
 });
-//
+// TESTIMONIAL SLIDER
+// Chuyển ảnh và nội dung khi người dùng nhấn vào button
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".testimonial-button");
   const images = document.querySelectorAll(".testimonial-first-img");
@@ -93,6 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// AUTO HIDE NAVBAR
+//   Ẩn navbar khi cuộn xuống
+//  Hiện navbar khi cuộn lên
 let lastScrollTop = 0;
 
 const navbar = document.querySelector(".navbar");
@@ -108,7 +112,10 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
-
+//  RESPONSIVE MOBILE MENU
+//   Tự động tạo menu dành cho thiết bị di động
+//  Hỗ trợ menu nhiều cấp (Level 1 - Level 2)
+//  -Mở/đóng bằng Hamburger Button
 document.addEventListener("DOMContentLoaded", function () {
   var dropdownList = document.querySelectorAll(".menu-navbar > .dropdown");
 
@@ -183,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var headerLevel2 = document.createElement("div");
     headerLevel2.className = "menu-screen-header";
     headerLevel2.innerHTML =
-      '<span class="menu-back-btn">&larr;</span>' +
+      '<span class="menu-back-btn"><i class="fa-solid fa-arrow-left"></i></span>' +
       '<span class="menu-screen-title">' +
       topLabel +
       "</span>";
