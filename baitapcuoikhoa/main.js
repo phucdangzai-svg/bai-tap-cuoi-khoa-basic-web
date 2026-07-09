@@ -6,8 +6,12 @@ const prev = document.querySelector(".section-prev");
 
 next.onclick = function () {
   if (window.innerWidth <= 768) {
-    let step = (viewport.scrollWidth - viewport.clientWidth) / 2;
-    viewport.scrollLeft = viewport.scrollLeft + step;
+    let cardWidth =
+      document.querySelector(".section-img-item").offsetWidth + 15; // 15 = gap
+    let maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    let step = Math.round(maxScroll / 2 / cardWidth) * cardWidth;
+
+    viewport.scrollLeft = Math.min(viewport.scrollLeft + step, maxScroll);
     updateButtons();
   } else {
     let scrollAmount = viewport.clientWidth;
@@ -20,8 +24,12 @@ next.onclick = function () {
 
 prev.onclick = function () {
   if (window.innerWidth <= 768) {
-    let step = (viewport.scrollWidth - viewport.clientWidth) / 2;
-    viewport.scrollLeft = viewport.scrollLeft - step;
+    let cardWidth =
+      document.querySelector(".section-img-item").offsetWidth + 15;
+    let maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    let step = Math.round(maxScroll / 2 / cardWidth) * cardWidth;
+
+    viewport.scrollLeft = Math.max(viewport.scrollLeft - step, 0);
     updateButtons();
   } else {
     viewport.scrollLeft = 0;

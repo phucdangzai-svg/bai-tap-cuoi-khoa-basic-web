@@ -991,9 +991,6 @@ svg {
     box-sizing: border-box;
   }
 
-  /* .section-viewport::-webkit-scrollbar {
-    display: none; /* ẩn scrollbar Chrome */
-
   .section-img {
     display: flex;
     gap: 15px;
@@ -1011,17 +1008,6 @@ svg {
   .section-img {
     display: flex;
     gap: 15px;
-  }
-
-  .section-img-item {
-    min-width: calc((100% - 30px) / 3) !important;
-    max-width: calc((100% - 30px) / 3) !important;
-    flex-shrink: 0;
-    margin-left: 0; /* bỏ -10px */
-    box-sizing: border-box;
-    object-fit: cover;
-    object-position: center;
-    scroll-snap-align: start;
   }
 
   .section-img-item img {
